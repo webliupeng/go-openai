@@ -216,6 +216,9 @@ type ChatCompletionRequest struct {
 	Tools        []Tool `json:"tools,omitempty"`
 	// This can be either a string or an ToolChoice object.
 	ToolChoice any `json:"tool_choice,omitempty"`
+
+	Variables  map[string]string `json:"variables,omitempty"`
+
 }
 
 type ToolType string
